@@ -32,7 +32,7 @@ export default function Home() {
         <meta property="og:image" content={apod.url} />
       </Head>
 
-      <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-4">
+      <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-4">
         <h1 className="text-3xl font-bold mb-4">{apod.title}</h1>
         <p className="mb-4">{apod.date}</p>
         <img src={apod.url} alt={apod.title} className="mb-4 rounded-lg shadow-lg max-w-full" />
@@ -62,7 +62,7 @@ export default function Home() {
         <div className="mt-6 p-4 border border-gray-500 rounded w-full max-w-md text-center">
           Place your AdSense or affiliate link here
         </div>
-      </div>
+      </main>
     </>
   );
 }
