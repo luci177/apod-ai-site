@@ -31,6 +31,7 @@ export default function Home() {
         <meta property="og:description" content={apod.aiDescription} />
         <meta property="og:image" content={apod.url} />
       </Head>
+
       <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-4">
         <h1 className="text-3xl font-bold mb-4">{apod.title}</h1>
         <p className="mb-4">{apod.date}</p>
