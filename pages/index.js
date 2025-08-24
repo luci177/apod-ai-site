@@ -37,6 +37,7 @@ export default function Home() {
         <img src={apod.url} alt={apod.title} className="mb-4 rounded-lg shadow-lg max-w-full" />
         <p className="text-lg mb-4">{apod.aiDescription}</p>
 
+        {/* Social Share Buttons */}
         <div className="flex gap-4 mt-4">
           <a
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(apod.title + " " + apod.url)}`}
@@ -56,6 +57,7 @@ export default function Home() {
           </a>
         </div>
 
+        {/* Ad Placeholder */}
         <div className="mt-6 p-4 border border-gray-500 rounded w-full max-w-md text-center">
           Place your AdSense or affiliate link here
         </div>
