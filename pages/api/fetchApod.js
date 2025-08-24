@@ -15,13 +15,10 @@ export default async function handler(req, res) {
       messages: [
         {
           role: "user",
-          content: `
-            Write a 2-3 sentence engaging description of this astronomy image
-            for a website visitor. Include interesting facts in simple language.
-            Title: ${title}
-            Date: ${date}
-            NASA explanation: ${explanation}
-          `,
+          content: `Write a 2-3 sentence engaging description of this astronomy image.
+Title: ${title}
+Date: ${date}
+NASA explanation: ${explanation}`
         },
       ],
     });
