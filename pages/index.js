@@ -35,7 +35,7 @@ export default function Home() {
       <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-4">
         <h1 className="text-3xl font-bold mb-4">{apod.title}</h1>
         <p className="mb-4">{apod.date}</p>
-        <img src={apod.url} alt={apod.title} className="mb-4 rounded-lg shadow-lg max-w-full" />
+        <img src={apod.url} alt={apod.title} className="mb-4 rounded-lg shadow-lg max-w-full"/>
         <p className="text-lg mb-4">{apod.aiDescription}</p>
 
         {/* Social Share Buttons */}
