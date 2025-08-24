@@ -29,23 +29,27 @@ export default function Home() {
         <p className="mb-4">{apod.date}</p>
         <img src={apod.url} alt={apod.title} className="mb-4 rounded-lg shadow-lg max-w-full" />
         <p className="text-lg mb-4">{apod.aiDescription}</p>
+
         {/* Social Share Buttons */}
         <div className="flex gap-4 mt-4">
           <a
-            href={}
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(apod.title + " " + apod.url)}`}
             target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 bg-blue-500 rounded"
           >
             Share on Twitter
           </a>
           <a
-            href={}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(apod.url)}`}
             target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 bg-blue-700 rounded"
           >
             Share on Facebook
           </a>
         </div>
+
         {/* Ad Placeholder */}
         <div className="mt-6 p-4 border border-gray-500 rounded w-full max-w-md text-center">
           Place your AdSense or affiliate link here
